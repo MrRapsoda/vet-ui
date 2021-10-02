@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>La veterinaria | Sitio de ejemplo</title>
+</head>
+
+<body>
+    <span id="signin-login"> <a href="#">Ingresá</a> o <a href="#">Registrate</a></span>
+    <header class="header">
+        <a href="index.html"><img src="img/logo.png" alt="La veterinaria Logo"></a>
+        <nav id="header-nav">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="agendarcita.html" id="bt-agendar-cita">Agende su cita &plus;</a>
+            <a href="contacto.html" id="bt-contacto">Contacto</a>
+
+        </nav>
+        <span id="header-res-menu" class="material-icons">
+            menu
+        </span>
+    </header>
+
+    <section class="fast-reserve-head">
+
+        <blockquote>
+            <h1>¡Somos su servicio de confianza!</h1>
+            <p>Nos hacemos cargo de sus mascotas <br> con todo el amor que se merecen</p>
+        </blockquote>
+        <div class="reserve-card">
+            <h4>Agendá una cita</h4>
+            <div class="card-input-container">
+                <input type="text" name="date" id="datepicker">
+                <span class="material-icons">
+                    event
+                </span>
+            </div>
+            <div class="card-input-container">
+                <input type="text" name="text-hour" id="timepicker" placeholder="Ingrese la hora">
+                <span class="material-icons">
+                    alarm
+                </span>
+            </div>
+            <div class="card-input-container">
+                <select name="select-pet" id="pet-selector" required>
+                    <option value="0" disabled selected>Selecciona alguna opcion</option>
+                    <option value="dog">Perro</option>
+                    <option value="cat">Gato</option>
+                    <option value="bunny">Conejo</option>
+                    <option value="bird">Pajaro</option>
+                </select>
+                <span class="material-icons">
+                    arrow_drop_down
+                </span>
+                <span class="material-icons">
+                    pets
+                </span>
+            </div>
+            <textarea name="text-area" id="info-text-area" cols="30" rows="5" placeholder="¿Por que consulta?"></textarea>
+            <button id="bt-cita">Agendar cita</button>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h1>Nosotros</h1>
+        <div class="row">
+
+            <aside class="us-info">
+                <img src="img/about-us-side.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum modi illum suscipit minima consectetur, fugiat quia ea quam officiis architecto id qui maxime earum, tempora nam ipsam eligendi exercitationem impedit perferendis expedita
+                    ratione doloribus. Error eum odio quod iure sequi debitis nesciunt asperiores voluptas hic neque! Quasi, repellendus odit cumque quae veritatis, rem nemo soluta, temporibus dolore consequuntur magnam suscipit? Numquam, ad. Enim, exercitationem
+                    dignissimos impedit expedita voluptatibus officiis ipsum!
+                    <br>
+                    <a href="nosotros.html">Ver mas</a>
+                </p>
+
+            </aside>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1>Nuestros servicios</h1>
+        <div class="services-container">
+
+            <div class="service-card">
+                <img src="img/services icons/medkit.png" alt="">
+                <h3>Medicina Preventiva</h3>
+            </div>
+            <div class="service-card">
+                <img src="img/services icons/estetoscopio.png" alt="">
+                <h3>Consulta</h3>
+            </div>
+            <div class="service-card">
+                <img src="img/services icons/cirugia.png" alt="">
+                <h3>Cirugía</h3>
+            </div>
+
+
+
+            <div class="service-card">
+                <img src="img/services icons/microscopio.png" alt="">
+                <h3>Laboratorio clinico</h3>
+            </div>
+            <div class="service-card">
+                <img src="img/services icons/groming.png" alt="">
+                <h3>Grooming</h3>
+            </div>
+            <div class="service-card">
+                <img src="img/services icons/adomicilio.png" alt="">
+                <h3>Servicio a domicilio</h3>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h1>Contacto</h1>
+        <div class="user-contact-form">
+            <div class="row">
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo Electronico">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button id="bt-enviar-contact-form">Enviar</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <nav class="nav-left">
+            <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Agenda tu cita</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <article class="footer-location">
+            <h4>Ubicacion</h4>
+            <p>De la calle 11, Avenida 2 <br> 25 mts este, local esquinero <br> Segunda planta</p>
+        </article>
+        <nav class="nav-rigth">
+            <span><img src="img/social/facebook.png" alt="">LaVeterinaria</span>
+            <span><img src="img/social/wapp.png" alt="">+506 8123 4567</span>
+            <span><img src="img/social/insta.png" alt="">@lavetcr</span>
+        </nav>
+        <p id="copy-rigth">&copy; Osvaldo Blanco 2020</p>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
